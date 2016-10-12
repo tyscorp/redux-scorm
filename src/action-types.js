@@ -1,0 +1,9 @@
+export const INITIALIZE = '@@scorm/INITIALIZE';
+export const REINITIALIZE = '@@scorm/REINITIALIZE';
+export const TERMINATE = '@@scorm/TERMINATE';
+export const GET_VALUE = '@@scorm/GET_VALUE';
+export const SET_VALUE = '@@scorm/SET_VALUE';
+export const COMMIT = '@@scorm/COMMIT';
+export const GET_LAST_ERROR = '@@scorm/GET_LAST_ERROR';
+export const GET_ERROR_STRING = '@@scorm/GET_ERROR_STRING';
+export const GET_DIAGNOSTIC = '@@scorm/GET_DIAGNOSTIC';

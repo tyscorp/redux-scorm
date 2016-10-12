@@ -1,0 +1,20 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": "airbnb-base",
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "plugins": ["import"],
+    "rules": {
+        "comma-dangle": ["error", "never"],
+        "arrow-parens": ["error", "always"],
+        "indent": ["error", 4, { "SwitchCase": 1 }],
+        "new-cap": ["off"],
+        "no-use-before-define": ["error", { "functions": false }]
+    }
+}

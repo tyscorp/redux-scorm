@@ -1,0 +1,69 @@
+{
+  "name": "redux-scorm",
+  "version": "0.1.0",
+  "description": "A higher order component decorator for integrating SCORM with Redux",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "jsnext:main": "es/index.js",
+  "scripts": {
+    "clean": "rimraf lib",
+    "lint": "eslint src test",
+    "test": "ava --concurrency=5 --verbose",
+    "test:watch": "npm test -- --watch",
+    "check": "npm run lint && npm run test",
+    "build": "webpack",
+    "prepublish": "npm run clean && npm run check && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tyscorp/redux-scorm.git"
+  },
+  "keywords": [
+    "redux",
+    "reducer",
+    "state",
+    "e-learning",
+    "scorm",
+    "lms"
+  ],
+  "author": "Tyson Cleary <amec@tyscorp.net> (https://github.com/tyscorp)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tyscorp/redux-scorm/issues"
+  },
+  "homepage": "https://github.com/tyscorp/redux-scorm",
+  "dependencies": {
+    "es6-error": "^4.0.0",
+    "lodash": "^4.0.0"
+  },
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-lodash": "^3.2.9",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-stage-3": "^6.17.0",
+    "enzyme": "^2.4.1",
+    "eslint": "^3.7.1",
+    "eslint-config-airbnb-base": "^8.0.0",
+    "eslint-plugin-import": "^2.0.0",
+    "lodash-webpack-plugin": "^0.10.2",
+    "react": "^15.3.2",
+    "rimraf": "^2.5.4",
+    "webpack": "^1.13.2"
+  },
+  "ava": {
+    "files": [
+      "test/*.spec.js"
+    ],
+    "source": [
+      "src/**/*.js"
+    ],
+    "concurrency": 5,
+    "failFast": true,
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
+  }
+}
