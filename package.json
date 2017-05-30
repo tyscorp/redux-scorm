@@ -37,20 +37,20 @@
     "lodash": "^4.0.0"
   },
   "devDependencies": {
-    "ava": "^0.16.0",
+    "ava": "^0.19.1",
     "babel-core": "^6.17.0",
-    "babel-loader": "^6.2.5",
+    "babel-loader": "^7.0.0",
     "babel-plugin-lodash": "^3.2.9",
     "babel-preset-latest": "^6.16.0",
     "babel-preset-stage-3": "^6.17.0",
     "enzyme": "^2.4.1",
     "eslint": "^3.7.1",
-    "eslint-config-airbnb-base": "^8.0.0",
+    "eslint-config-airbnb-base": "^11.2.0",
     "eslint-plugin-import": "^2.0.0",
-    "lodash-webpack-plugin": "^0.10.2",
+    "lodash-webpack-plugin": "^0.11.4",
     "react": "^15.3.2",
     "rimraf": "^2.5.4",
-    "webpack": "^1.13.2"
+    "webpack": "^2.6.1"
   },
   "ava": {
     "files": [
