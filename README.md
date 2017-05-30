@@ -1,5 +1,7 @@
 # redux-scorm
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tyscorp/redux-scorm.svg)](https://greenkeeper.io/)
+
 WIP!
 
 # Installation
